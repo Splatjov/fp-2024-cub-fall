@@ -27,7 +27,7 @@ generateSudoku difficulty = do
         "easy"   -> randomRIO (30, 40)
         "medium" -> randomRIO (41, 50)
         "hard"   -> randomRIO (51, 60)
-        "expert" -> randomRIO (61, 68)
+        "expert" -> randomRIO (61, 63)
         _        -> randomRIO (30, 40)
     removeCells solvedGrid emptyCells
 
